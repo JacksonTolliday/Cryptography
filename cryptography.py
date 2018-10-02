@@ -18,18 +18,13 @@ while run == True:
     if rerun == False:
         if dore == 'e' or dore == 'd':
             basemsg = input(str('Message: '))
-            keypass = 'Lorem ipsum'
             key = input(str('Key: '))
-            if keypass == key:
-                if dore == 'e':
-                    print('eeeeeee')
-                    rerun = True
-                if dore == 'd':
-                    print('ddddddd')
-                    rerun = True
-            else:
-                print('Goodbye!')
-                run = False
+            if dore == 'e':
+                print('eeeeeee')
+                rerun = True
+            if dore == 'd':
+                print('ddddddd')
+                rerun = True
         elif dore == 'q':
             print('Goodbye!')
             run = False
