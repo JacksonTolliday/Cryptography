@@ -15,7 +15,7 @@ associationsn = list(associations)
 associationsnu = list(range(len(associationsn)))
 letternumzip = list(zip(associationsnu, associationsn))
 print(letternumzip)
-
+'''
 dore = input(str('Enter e to encrypt, d to decrypt, or q to quit: '))
 run = True
 rerun = False
@@ -40,5 +40,5 @@ while run == True:
         dore = None
         dore = input(str('Enter e to encrypt, d to decrypt, or q to quit: '))
         rerun = False
-
+'''
 
