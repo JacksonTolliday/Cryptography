@@ -15,10 +15,12 @@ dore = input(str('Enter e to encrypt, d to decrypt, or q to quit: '))
 run = True
 rerun = False
 while run == True:
-    if rerun == False
-    if dore == e or d:
+    if rerun == True:
+        dore = None
+        dore = input(str('Enter e to encrypt, d to decrypt, or q to quit: '))
+    if dore == 'e' or 'd':
         0
-    elif dore == q:
+    elif dore == 'q':
         print('Goodbye!')
         break
     else:
