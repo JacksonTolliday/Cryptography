@@ -17,7 +17,19 @@ rerun = False
 while run == True:
     if rerun == False:
         if dore == 'e' or dore == 'd':
-            pass
+            basemsg = input(str('Message: '))
+            keypass = 'Lorem ipsum'
+            key = input(str('Key: '))
+            if keypass == key:
+                if dore == 'e':
+                    print('eeeeeee')
+                    rerun = True
+                if dore == 'd':
+                    print('ddddddd')
+                    rerun = True
+            else:
+                print('Goodbye!')
+                run = False
         elif dore == 'q':
             print('Goodbye!')
             run = False
@@ -28,6 +40,3 @@ while run == True:
         dore = None
         dore = input(str('Enter e to encrypt, d to decrypt, or q to quit: '))
         rerun = False
-
-'''basemsg = input(str('Message: '))
-key = input(str('Key: '))'''
