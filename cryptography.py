@@ -9,13 +9,13 @@ Write and submit a program that encrypts and decrypts user data.
 
 See the detailed requirements at https://github.com/HHS-IntroProgramming/Cryptography/blob/master/README.md
 """
+
 associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;'\"/\\<>(){}[]-=_+?!"
 associationsn = list(associations)
-print(associationsn)
 associationsnu = list(range(len(associationsn)))
-print(associationsnu)
+letternumzip = list(zip(associationsnu, associationsn))
+print(letternumzip)
 
-'''
 dore = input(str('Enter e to encrypt, d to decrypt, or q to quit: '))
 run = True
 rerun = False
@@ -40,4 +40,5 @@ while run == True:
         dore = None
         dore = input(str('Enter e to encrypt, d to decrypt, or q to quit: '))
         rerun = False
-'''
+
+
