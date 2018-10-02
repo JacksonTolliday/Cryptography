@@ -16,8 +16,8 @@ run = True
 rerun = False
 while run == True:
     if rerun == False:
-        if dore == 'e' or 'd':
-            0
+        if dore == 'e' or dore == 'd':
+            pass
         elif dore == 'q':
             print('Goodbye!')
             run = False
