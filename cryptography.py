@@ -12,9 +12,10 @@ See the detailed requirements at https://github.com/HHS-IntroProgramming/Cryptog
 associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;'\"/\\<>(){}[]-=_+?!"
 
 dore = input(str('Enter e to encrypt, d to decrypt, or q to quit: '))
-rerun = True
-while rerun = True:
-    rerun = False
+run = True
+rerun = False
+while run == True:
+    if rerun == False
     if dore == e or d:
         0
     elif dore == q:
