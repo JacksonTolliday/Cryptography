@@ -1,7 +1,7 @@
 """
 cryptography.py
-Author: <your name here>
-Credit: <list sources used, if any>
+Author: Jackson Tolliday
+Credit: https://stackoverflow.com/questions/4978787/how-to-split-a-string-into-array-of-characters
 
 Assignment:
 
@@ -12,6 +12,8 @@ See the detailed requirements at https://github.com/HHS-IntroProgramming/Cryptog
 associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;'\"/\\<>(){}[]-=_+?!"
 associationsn = list(associations)
 print(associationsn)
+associationsnu = list(range(len(associationsn)))
+print(associationsnu)
 
 '''
 dore = input(str('Enter e to encrypt, d to decrypt, or q to quit: '))
