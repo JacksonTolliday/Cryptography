@@ -18,14 +18,23 @@ while run == True:
     if rerun == True:
         dore = None
         dore = input(str('Enter e to encrypt, d to decrypt, or q to quit: '))
-    if dore == 'e' or 'd':
-        0
-    elif dore == 'q':
-        print('Goodbye!')
-        break
-    else:
-        print('Did not understand command, try again.')
-        rerun = True
+        if dore == 'e' or 'd':
+            0
+        elif dore == 'q':
+            print('Goodbye!')
+            run = False
+        else:
+            print('Did not understand command, try again.')
+            rerun = True
+    if rerun == False:
+        if dore == 'e' or 'd':
+            0
+        elif dore == 'q':
+            print('Goodbye!')
+            run = False
+        else:
+            print('Did not understand command, try again.')
+            rerun = True
     
 
 '''basemsg = input(str('Message: '))
