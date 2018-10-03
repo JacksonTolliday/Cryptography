@@ -40,7 +40,7 @@ def numbs(message): #, key, direction
                         del message(0)
                         c = c+1
                         swap = 1
-
+print(numbs('Hello, World!'))
 
 '''
 dore = input(str('Enter e to encrypt, d to decrypt, or q to quit: '))
