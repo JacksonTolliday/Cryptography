@@ -26,20 +26,13 @@ def scramble(message): #, key, direction
 print(scramble('Hello, World!'))
 '''
 def numbs(message): #, key, direction
-    swap = 1
-    while swap > 0:
-        swap = 0
+    for c in list(messsage)
         for x,y in letternumzip:
-            c = 0
-            cmax = len(message)-1
-            if c < cmax:
-                if c in list(message) == y:
-                    if c == True:
-                        leftover = range(len(message))
-                        message.append(x)
-                        del message[0]
-                        c = c+1
-                        swap = 1
+            if c in list(message) == y:
+                leftover = range(len(message))
+                message.append(x)
+                del message[0]
+                c = c+1
 print(numbs('Hello, World!'))
 
 '''
