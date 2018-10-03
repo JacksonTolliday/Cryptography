@@ -34,10 +34,10 @@ def numbs(message): #, key, direction
             cmax = len(message)-1
             if c < cmax:
                 if c in list(message) == y:
-                    if ltrzip[c][0] < ltrzip[c+1][0]:
+                    if c == True:
                         leftover = range(len(message))
                         message.append(x)
-                        del message(0)
+                        del message[0]
                         c = c+1
                         swap = 1
 print(numbs('Hello, World!'))
