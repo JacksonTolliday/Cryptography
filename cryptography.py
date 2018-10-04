@@ -34,7 +34,7 @@ print(scramble('Hello, World!'))
 def numbs(message): #, key, direction
     message = list(message)
     msgnum = 0
-    while msgnum < len(ltr)-1:
+    while msgnum < len(message)-1:
         for c in message:
             for x,y in ltrnumdicte:
                 if c in ltrnumdicte:
