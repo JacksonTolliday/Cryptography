@@ -33,10 +33,8 @@ print(scramble('Hello, World!'))
 
 def numbs(message): #, key, direction
     message = list(message)
-    msgnum = 0
-    while msgnum < len(message)-1:
-        for c in message:
-            print(ltrnumdicte[c])
+    for c in message:
+        print(ltrnumdicte[c])
 
 '                leftover = range(len(message))'
 '                del message[0]'
