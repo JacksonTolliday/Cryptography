@@ -13,7 +13,7 @@ See the detailed requirements at https://github.com/HHS-IntroProgramming/Cryptog
 associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;'\"/\\<>(){}[]-=_+?!"
 associationsn = list(associations)
 associationsnu = list(range(len(associationsn)))
-letternumzip = list(zip(associationsnu, associationsn))
+letternumdict = list(dict([(associationsnu, associationsn)]))
 print(letternumzip)
 '''
 def scramble(message): #, key, direction
