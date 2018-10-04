@@ -33,7 +33,7 @@ def numbs(message): #, key, direction
                 leftover = range(len(message))
                 message.append(x)
                 del message[0]
-                c = c+1
+
 print(numbs('Hello, World!'))
 
 '''
