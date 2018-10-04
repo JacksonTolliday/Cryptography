@@ -39,7 +39,6 @@ def numbs(message): #, key, direction
             for x,y in ltrnumdicte:
                 if c in ltrnumdicte:
                     print(y)
-                else:
                     msgnum = msgnum +1
 '                leftover = range(len(message))'
 '                del message[0]'
