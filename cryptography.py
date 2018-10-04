@@ -16,8 +16,9 @@ associationsnu = list(range(len(associationsn)))
 letternumzip = list(zip(associationsnu, associationsn))
 ltrnumdict = dict(letternumzip)
 print(ltrnumdict)
+haha = list('Hello, World!')
 
-print(ltrnumdict[list('Hello, World!')])
+print(ltrnumdict[haha])
 
 '''
 def scramble(message): #, key, direction
@@ -28,7 +29,7 @@ def scramble(message): #, key, direction
             message.append(x)
             c = c+1
 print(scramble('Hello, World!'))
-'''
+
 def numbs(message): #, key, direction
     message = list(message)
     for c in message:
@@ -40,7 +41,7 @@ def numbs(message): #, key, direction
 '                del message[0]'
 
 print(numbs('Hello, World!'))
-
+'''
 '''
 dore = input(str('Enter e to encrypt, d to decrypt, or q to quit: '))
 run = True
