@@ -17,6 +17,8 @@ letternumzip = list(zip(associationsnu, associationsn))
 ltrnumdict = dict(letternumzip)
 print(ltrnumdict)
 
+print(ltrnumdict[list('Hello, World!')])
+
 '''
 def scramble(message): #, key, direction
     for x,y in letternumzip:
