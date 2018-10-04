@@ -37,9 +37,8 @@ def numbs(message): #, key, direction
     while msgnum < len(message)-1:
         for c in message:
             for x,y in ltrnumdicte:
-                if c in ltrnumdicte:
-                    print(y)
-                    msgnum = msgnum +1
+                print(ltrnumdicte[c])
+
 '                leftover = range(len(message))'
 '                del message[0]'
 
