@@ -28,7 +28,7 @@ print(scramble('Hello, World!'))
 def numbs(message): #, key, direction
     for c in list(message):
         for x,y in letternumzip:
-            if c in list(message) == y:
+            if c == y:
                 leftover = range(len(message))
                 message.append(x)
                 del message[0]
