@@ -36,7 +36,7 @@ def numbs(message, key): # direction
             print((ltrnumdict[c])+(ltrnumdict[a]))
 
 
-
+numbs('hello world!')
 
 '''
 dore = input(str('Enter e to encrypt, d to decrypt, or q to quit: '))
