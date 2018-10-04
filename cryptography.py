@@ -13,12 +13,10 @@ See the detailed requirements at https://github.com/HHS-IntroProgramming/Cryptog
 associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;'\"/\\<>(){}[]-=_+?!"
 associationsn = list(associations)
 associationsnu = list(range(len(associationsn)))
-letternumzipd = list(zip(associationsnu, associationsn))
-ltrnumdictd = dict(letternumzipd)
-letternumzipe = list(zip(associationsn, associationsnu))
-ltrnumdicte = dict(letternumzipe)
+letternumzip = list(zip(associationsn, associationsnu))
+ltrnumdict = dict(letternumzip)
 
-print(ltrnumdicte)
+print(ltrnumdict)
 
 '''
 def scramble(message): #, key, direction
@@ -31,16 +29,14 @@ def scramble(message): #, key, direction
 print(scramble('Hello, World!'))
 '''
 
-def numbs(message): #, key, direction
+def numbs(message, key): # direction
     message = list(message)
     for c in message:
-        x = []
-        x.append(ltrnumdicte[c])
+        for a in key:
+            print((ltrnumdict[c])+(ltrnumdict[a])
 
-'                leftover = range(len(message))'
-'                del message[0]'
 
-print(numbs('Hello, World!'))
+
 
 '''
 dore = input(str('Enter e to encrypt, d to decrypt, or q to quit: '))
