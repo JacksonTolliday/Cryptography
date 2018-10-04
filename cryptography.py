@@ -33,7 +33,7 @@ def numbs(message, key): # direction
     message = list(message)
     for c in message:
         for a in key:
-            print((ltrnumdict[c])+(ltrnumdict[a])
+            print((ltrnumdict[c])+(ltrnumdict[a]))
 
 
 
