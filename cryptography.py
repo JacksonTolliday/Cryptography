@@ -29,7 +29,7 @@ def numbs(message): #, key, direction
     message = list(message)
     for c in message:
         for x in letternumzip:
-            if c == letternumzip[x][1]:
+            if c in letternumzip[x][1]:
                 message.append(letternumzip[x][0])
 
 '                leftover = range(len(message))'
