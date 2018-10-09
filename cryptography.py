@@ -34,11 +34,11 @@ def numbs(message, key): # direction
     key = list(key)
     for c in message:
         for a in key:
-            ac = (zip(c, a))
-            print(list(ac))
+            ac = list(zip(c, a))
             dstrcmnd = list(range(len(message) * (len(key))))
             print(dstrcmnd)
-            
+print(ac)
+
 numbs('hello world!', 'hi')
 
 '''
