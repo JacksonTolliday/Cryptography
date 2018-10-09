@@ -32,8 +32,9 @@ print(scramble('Hello, World!'))
 def numbs(message, key): # direction
     message = list(message)
     key = list(key)
-    for c in message and a in key:
-        zip(c, a)
+    for c in message:
+        for a in key:
+            zip(c, a)
     
 '''
     for c in message:
