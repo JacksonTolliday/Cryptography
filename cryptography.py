@@ -35,7 +35,7 @@ def numbs(message, key): # direction
     for c in message:
         for a in key:
             ac = list(zip(c, a))
-            alist = [(),]
+            alist = [(),()]
             alist.append(ac)
             dstrcmnd = list(range(len(message) * (len(key))))
             print(dstrcmnd)
