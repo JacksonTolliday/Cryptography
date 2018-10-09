@@ -39,8 +39,9 @@ def numbs(message, key): # direction
             alist.append(tuple([c, a]))
             dstrcmnd = list(range(len(message) * (len(key))))
             print(alist)
+            print(dstrcmnd)
 
-numbs('hello world!', 'hi')
+numbs('hello world!', 'hil')
 
 '''
 dore = input(str('Enter e to encrypt, d to decrypt, or q to quit: '))
