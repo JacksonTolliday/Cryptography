@@ -34,14 +34,9 @@ def numbs(message, key): # direction
     key = list(key)
     for c in message:
         for a in key:
-            print(list(zip(c, a)))
+            ac = (zip(c, a)))
+            print(list(ac))
 
-
-'''
-    for c in message:
-        for a in key:
-            print((ltrnumdict[c])+(ltrnumdict[a]))
-'''
 
 numbs('hello world!', 'hi')
 
