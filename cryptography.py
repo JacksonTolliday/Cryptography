@@ -39,7 +39,7 @@ def numbs(message, key): # direction
             alist.append(ac)
             dstrcmnd = list(range(len(message) * (len(key))))
             print(dstrcmnd)
-            
+            print(alist)
 
 numbs('hello world!', 'hi')
 
