@@ -1,7 +1,7 @@
 """
 cryptography.py
 Author: Jackson Tolliday
-Credit: https://stackoverflow.com/questions/4978787/how-to-split-a-string-into-array-of-characters
+Credit: https://stackoverflow.com/questions/4978787/how-to-split-a-string-into-array-of-characters, https://stackoverflow.com/questions/31175223/append-a-tuple-to-a-list-whats-the-difference-between-two-ways
 
 Assignment:
 
@@ -35,8 +35,8 @@ def numbs(message, key): # direction
     for c in message:
         for a in key:
             ac = list(zip(c, a))
-            alist = [(),()]
-            alist.append(ac)
+            alist = []
+            alist.append((ac))
             dstrcmnd = list(range(len(message) * (len(key))))
             print(dstrcmnd)
             print(alist)
