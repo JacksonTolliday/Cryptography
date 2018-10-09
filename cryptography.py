@@ -28,8 +28,9 @@ def scramble(message): #, key, direction
             c = c+1
 print(scramble('Hello, World!'))
 '''
-alist = []
+
 def numbs(message, key): # direction
+    alist = []
     message = list(message)
     key = list(key)
     for c in message:
