@@ -35,9 +35,8 @@ def numbs(message, key): # direction
     for c in message:
         for a in key:
             alist = []
-            alist.append(tuple([c, a]))
+            alist.append(tuple([c, a]), )
             dstrcmnd = list(range(len(message) * (len(key))))
-            print(dstrcmnd)
             print(alist)
 
 numbs('hello world!', 'hi')
