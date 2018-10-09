@@ -34,7 +34,7 @@ def numbs(message, key): # direction
     blist = []
     message = list(message)
     key = list(key)
-    zipmsgkey = list(zip(message, key)
+    zipmsgkey = list(zip(message, key))
     print(zipmsgkey)
 '''
     for c in message:
