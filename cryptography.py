@@ -35,12 +35,13 @@ def numbs(message, key): # direction
     key = list(key)
     for c in message:
         for a in key:
-            
             alist.append(tuple([c, a]))
             dstrcmnd = list(range(len(message) * (len(key))))
             print(alist)
-            prep = len(key)     #pattern for key 3: leave 1, then del 3, leave 1, del 3, leave 1. total var; 9
-
+            prep = ((len(key))*2 + 3)
+            print(prep)
+                                #pattern for key 3: leave 1, then del 3, leave 1, del 3, leave 1. total var; 9
+                                #pattern for key 2: leave 1, then del 2, leave 1, del 2, leave 1. total var; 7
 numbs('hello world!', 'hi')
 
 '''
