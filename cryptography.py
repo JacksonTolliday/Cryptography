@@ -34,7 +34,7 @@ def numbs(message, key): # direction
     key = list(key)
     for c in message:
         for a in key:
-            print(zip(c, a))
+            print(list(zip(c, a)))
 
 
 '''
