@@ -21,26 +21,16 @@ print(ltrnumdict)
 def numbs(message, key): # direction
     alist = []
     blist = []
-    a = '0'
-    b = '0'
+    a = 0
     c = 0
     message = list(message)
     key = list(key)
     tkey = int(len(message)/ len(key))
     thkey = key*tkey
     for c in range(len(message)):
-        for a in key:
-            if c < len(thkey):
-                thkey.insert(0, ltrnumdict[a])
-                del thkey[1]
-            else:
-                break
-        for b in message:
-            if c < len(message):
-                message.insert(0, ltrnumdict[b])
-                del message[1]
-            else:
-                break
+        message[c] = ltrnumdict[message[c]]
+    for a in range(len(key)):
+        key[a] = ltrnumdict[key[a]]
     zipmsgkey = list(zip(message, thkey))
     print(zipmsgkey)
     
