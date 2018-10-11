@@ -23,6 +23,7 @@ def numbs(message, key): # direction
     blist = []
     a = 0
     b = 0
+    c = 0
     message = list(message)
     key = list(key)
     tkey = int(len(message)/ len(key))
