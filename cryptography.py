@@ -29,7 +29,7 @@ def numbs(message, key): # direction
     thkey = key*tkey
     for c in range(len(message)):
         message[c] = ltrnumdict[message[c]]
-        key[c] = ltrnumdict[key[c]]
+        thkey[c] = ltrnumdict[thkey[c]]
     zipmsgkey = list(zip(message, thkey))
     print(zipmsgkey)
     
