@@ -28,10 +28,17 @@ def numbs(message, key): # direction
     tkey = int(len(message)/ len(key))
     thkey = key*tkey
     for a in key:
-        key.insert(0, ltrnumdict[a])
-        del key[1]
+        if b < len(key):
+            key.insert(0, ltrnumdict[a])
+            del key[1]
+        else:
+            break
     for b in message:
-        ltrnumdict[b]
+        if b < len(message):
+            message.insert(0, ltrnumdict[b])
+            del message[1]
+        else:
+            break
     zipmsgkey = list(zip(message, thkey))
     print(zipmsgkey)
     
