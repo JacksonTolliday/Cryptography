@@ -30,7 +30,7 @@ def numbs(message, key): # direction
     key = ltrnumdict[for a in key]
     message = ltrnumdict[for b in message]
     zipmsgkey = list(zip(message, thkey))
-
+    print(zipmsgkey)
 numbs('hello world!', 'hi')
 
 '''
