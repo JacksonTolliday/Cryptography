@@ -27,6 +27,7 @@ def numbs(message, key): # direction
     key = list(key)
     tkey = int(len(message)/ len(key))
     thkey = key*tkey
+    print(message)
     for c in range(len(message)):
         message[c] = ltrnumdict[message[c]]
     for a in range(len(key)):
