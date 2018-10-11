@@ -34,6 +34,7 @@ def numbs(message, key): # direction
     fullnumlist = []
     for a in range(len(zipmsgkey)):
         fullnumlist.append(ltrzip[c][0] + ltrzip[c][1])
+    print(fullnumlist)
     
 numbs('hello world!', 'hi')
 
