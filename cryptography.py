@@ -33,8 +33,8 @@ def numbs(message, key): # direction
                 thkey.insert(0, ltrnumdict[a])
                 del thkey[1]
             else:
+                print(thkey)
                 break
-        print(thkey)
         while b in message:
             if c < len(message):
                 message.insert(0, ltrnumdict[b])
