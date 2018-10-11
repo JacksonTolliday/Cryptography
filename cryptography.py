@@ -31,7 +31,9 @@ def numbs(message, key): # direction
         message[c] = ltrnumdict[message[c]]
         thkey[c] = ltrnumdict[thkey[c]]
     zipmsgkey = list(zip(message, thkey))
-    for a in zipmsgkey
+    fullnumlist = []
+    for a in range(len(zipmsgkey)):
+        fullnumlist.append(ltrzip[c][0] + ltrzip[c][1])
     
 numbs('hello world!', 'hi')
 
