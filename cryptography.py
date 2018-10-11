@@ -37,7 +37,7 @@ def numbs(message, key): # direction
     tkey = int(len(message)/ len(key))
     thkey = key*tkey
     zipmsgkey = list(zip(message, key))
-    print(tkey)
+    print(thkey)
     
 '''
     for c in message:
