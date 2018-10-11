@@ -18,38 +18,18 @@ ltrnumdict = dict(letternumzip)
 
 print(ltrnumdict)
 
-'''
-def scramble(message): #, key, direction
-    for x,y in letternumzip:
-        c = 0
-        if c in list(message) == y:
-            leftover = range(len(message))
-            message.append(x)
-            c = c+1
-print(scramble('Hello, World!'))
-'''
-
 def numbs(message, key): # direction
     alist = []
     blist = []
+    a = 0
+    b = 0
     message = list(message)
     key = list(key)
     tkey = int(len(message)/ len(key))
     thkey = key*tkey
-    zipmsgkey = list(zip(message, key))
-    print(thkey)
-    
-'''
-    for c in message:
-        for a in key:
-            alist.append(tuple([c, a]))
-            length = list(range(len(message) * (len(key))))
-            print(alist)
-            prep = ((len(key))*2 + 3)
-            blist.append((alist[0]))
-                                #pattern for key 3: leave 1, then del 3, leave 1, del 3, leave 1. total var; 9
-                                #pattern for key 2: leave 1, then del 2, leave 1, del 2, leave 1. total var; 7
-'''
+    key = ltrnumdict[for a in key]
+    message = ltrnumdict[for b in message]
+    zipmsgkey = list(zip(message, thkey))
 
 numbs('hello world!', 'hi')
 
