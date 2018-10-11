@@ -51,7 +51,7 @@ def numbs(message, key): # direction
                                 #pattern for key 2: leave 1, then del 2, leave 1, del 2, leave 1. total var; 7
 '''
 
-numbs('hello world!', 'hill')
+numbs('hello world!', 'hi')
 
 '''
 dore = input(str('Enter e to encrypt, d to decrypt, or q to quit: '))
