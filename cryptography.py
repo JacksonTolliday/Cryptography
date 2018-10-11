@@ -34,7 +34,7 @@ def numbs(message, key): # direction
                 del thkey[1]
             else:
                 break
-    print(thkey)
+        print(thkey)
         for b in message:
             if c < len(message):
                 message.insert(0, ltrnumdict[b])
