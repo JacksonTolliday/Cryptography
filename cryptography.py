@@ -27,8 +27,8 @@ def numbs(message, key): # direction
     key = list(key)
     tkey = int(len(message)/ len(key))
     thkey = key*tkey
-    for a in range(len(key)):
-        if b < len(key):
+    for a in range(len(message)):
+        if a < len(key):
             key.insert(0, ltrnumdict[a])
             del key[1]
         else:
