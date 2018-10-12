@@ -12,6 +12,8 @@ See the detailed requirements at https://github.com/HHS-IntroProgramming/Cryptog
 
 associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;'\"/\\<>(){}[]-=_+?!"
 associationsn = list(associations)
+reeesomemore = associationsn*2
+print(reeesomemore)
 associationsnu = list(range(len(associationsn)))
 letternumzip = list(zip(associationsn, associationsnu))
 numletterzip = list(zip(associationsnu, associationsn))
