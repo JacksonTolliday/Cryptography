@@ -12,11 +12,11 @@ See the detailed requirements at https://github.com/HHS-IntroProgramming/Cryptog
 
 associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;'\"/\\<>(){}[]-=_+?!"
 associationsn = list(associations)
-reeesomemore = associationsn*2
-print(reeesomemore)
+somemore = associationsn*2
 associationsnu = list(range(len(associationsn)))
+whynot = list(range(len(somemore)))
 letternumzip = list(zip(associationsn, associationsnu))
-numletterzip = list(zip(associationsnu, associationsn))
+numletterzip = list(zip(whynot, somemore))
 ltrnumdict = dict(letternumzip)
 numltrdict = dict(numletterzip)
 print(numltrdict)
