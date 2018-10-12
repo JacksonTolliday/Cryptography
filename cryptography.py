@@ -45,7 +45,7 @@ def numbs(message, key, direction):
         completion.append(numltrdict[fullnumlist[d]])
     print(completion)
     
-numbs('hello world!', 'hi', -1)
+numbs('hello world!', 'hi', 1)
 
 '''
 dore = input(str('Enter e to encrypt, d to decrypt, or q to quit: '))
