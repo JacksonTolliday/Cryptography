@@ -21,7 +21,10 @@ ltrnumdict = dict(letternumzip)
 numltrdict = dict(numletterzip)
 subractfornumltrdict = associationsnu
 subractfornumltrdict[:] = [x - len(associationsnu) for x in subractfornumltrdict]
-print(subractfornumltrdict)
+numltrdict = ''.join(subractfornumltrdict, numltrdict)
+print(numltrdict)
+
+
 
 def encdecrypt(message, key, direction):
     a = 0
