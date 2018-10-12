@@ -22,7 +22,7 @@ letternumzip = list(zip(associationsn, associationsnu))
 numletterzip = list(zip(whynot, somemore))
 ltrnumdict = dict(letternumzip)
 numltrdict = dict(numletterzip)
-print(numltrdict)
+print(ltrnumdict)
 
 
 def encdecrypt(message, key, direction):
@@ -47,7 +47,6 @@ def encdecrypt(message, key, direction):
             fullnumlist.append(b)
     completion = []
     for d in range(len(fullnumlist)):
-        print(fullnumlist[d])
         completion.append(numltrdict[fullnumlist[d]])
     done = ''.join(completion)
     print(done)
