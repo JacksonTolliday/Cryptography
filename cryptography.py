@@ -45,7 +45,8 @@ def numbs(message, key, direction):
     completion = []
     for d in range(len(fullnumlist)):
         completion.append(numltrdict[fullnumlist[d]])
-    print(completion)
+    done = ''.join(completion)
+    print(done)
     
 numbs('hello world!', 'hi', 1)
 
