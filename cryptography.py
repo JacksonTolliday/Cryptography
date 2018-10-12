@@ -40,9 +40,10 @@ def numbs(message, key, direction):
             b = a[0] - a[1]
             fullnumlist.append(b)
     print(fullnumlist)
+    completion = []
     for d in range(len(fullnumlist)):
-        fullnumlist[d] = numltrdict[fullnumlist[d]]
-
+        completion.append(numltrdict[fullnumlist[d]])
+    print(completion)
     
 numbs('hello world!', 'hi')
 
