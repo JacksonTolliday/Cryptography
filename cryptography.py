@@ -15,14 +15,14 @@ associationsn = list(associations)
 somemore = associationsn*2
 associationsnu = list(range(len(associationsn)))
 whynot = list(range(len(somemore)))
+subractfornumltrdict = associationsnu
+subractfornumltrdict[:] = [x - len(associationsnu) for x in subractfornumltrdict]
+whynot = subractfornumltrdict + whynot
 letternumzip = list(zip(associationsn, associationsnu))
 numletterzip = list(zip(whynot, somemore))
 ltrnumdict = dict(letternumzip)
 numltrdict = dict(numletterzip)
-subractfornumltrdict = associationsnu
-subractfornumltrdict[:] = [x - len(associationsnu) for x in subractfornumltrdict]
-whynot = subractfornumltrdict + whynot
-print(whynot)
+print(numltrdict)
 
 
 
