@@ -22,7 +22,7 @@ numltrdict = dict(numletterzip)
 subractfornumltrdict = associationsnu
 subractfornumltrdict[:] = [x - len(associationsnu) for x in subractfornumltrdict]
 somemore = subractfornumltrdict + somemore
-print(numltrdict)
+print(somemore)
 
 
 
