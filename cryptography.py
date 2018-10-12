@@ -19,7 +19,7 @@ letternumzip = list(zip(associationsn, associationsnu))
 numletterzip = list(zip(whynot, somemore))
 ltrnumdict = dict(letternumzip)
 numltrdict = dict(numletterzip)
-
+subractfornumltrdict = list(range(len(associationsn))-len(associationsn))
 
 def encdecrypt(message, key, direction):
     a = 0
