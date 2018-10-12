@@ -22,7 +22,6 @@ letternumzip = list(zip(associationsn, associationsnu))
 numletterzip = list(zip(whynot, somemore))
 ltrnumdict = dict(letternumzip)
 numltrdict = dict(numletterzip)
-print(numltrdict)
 
 
 
@@ -52,7 +51,7 @@ def encdecrypt(message, key, direction):
     done = ''.join(completion)
     print(done)
 
-'''
+
 dore = input(str('Enter e to encrypt, d to decrypt, or q to quit: '))
 run = True
 rerun = False
@@ -77,5 +76,5 @@ while run == True:
         dore = None
         dore = input(str('Enter e to encrypt, d to decrypt, or q to quit: '))
         rerun = False
-'''
+
 
