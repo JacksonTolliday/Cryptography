@@ -19,7 +19,7 @@ ltrnumdict = dict(letternumzip)
 numltrdict = dict(numletterzip)
 print(numltrdict)
 
-def numbs(message, key): # direction
+def numbs(message, key, direction):
     a = 0
     c = 0
     d = 0
@@ -33,8 +33,12 @@ def numbs(message, key): # direction
     zipmsgkey = list(zip(message, thkey))
     fullnumlist = []
     for a in zipmsgkey:
-        b = a[0] + a[1]
-        fullnumlist.append(b)
+        if direction == 1:
+            b = a[0] + a[1]
+            fullnumlist.append(b)
+        if direction == -1:
+            b = a[0] - a[1]
+            fullnumlist.append(b)
     print(fullnumlist)
     for d in range(len(fullnumlist)):
         fullnumlist[d] = numltrdict[fullnumlist[d]]
