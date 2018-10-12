@@ -12,7 +12,7 @@ See the detailed requirements at https://github.com/HHS-IntroProgramming/Cryptog
 
 associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;'\"/\\<>(){}[]-=_+?!"
 associationsn = list(associations)
-somemore = associationsn*2
+somemore = associationsn*3
 associationsnu = list(range(len(associationsn)))
 whynot = list(range(len(somemore)))
 subractfornumltrdict = associationsnu
