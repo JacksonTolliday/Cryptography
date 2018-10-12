@@ -20,8 +20,6 @@ numltrdict = dict(numletterzip)
 print(numltrdict)
 
 def numbs(message, key): # direction
-    alist = []
-    blist = []
     a = 0
     c = 0
     d = 0
@@ -39,7 +37,7 @@ def numbs(message, key): # direction
         fullnumlist.append(b)
     print(fullnumlist)
     for d in fullnumlist:
-        fullnumlist[d] = numltrdict[fullnumlist[d]]
+        d = numltrdict[d]
     print(fullnumlist)
     
 numbs('hello world!', 'hi')
