@@ -33,7 +33,7 @@ def numbs(message, key): # direction
     zipmsgkey = list(zip(message, thkey))
     fullnumlist = []
     for a in zipmsgkey:
-        b = zipmsgkey[a][0] + zipmsgkey[a][1]
+        b = a[0] + a[1]
         fullnumlist.append(b)
     print(fullnumlist)
     
