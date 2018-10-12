@@ -47,7 +47,7 @@ def encdecrypt(message, key, direction):
             fullnumlist.append(b)
     completion = []
     for d in range(len(fullnumlist)):
-        print(numltrdict[fullnumlist[d]])
+        print(fullnumlist[d])
         completion.append(numltrdict[fullnumlist[d]])
     done = ''.join(completion)
     print(done)
