@@ -14,8 +14,9 @@ associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .
 associationsn = list(associations)
 associationsnu = list(range(len(associationsn)))
 letternumzip = list(zip(associationsn, associationsnu))
+numletterzip = list(zip(associationsnu, associationsn))
 ltrnumdict = dict(letternumzip)
-
+numltrdict = dict(numletterzip)
 print(ltrnumdict)
 
 def numbs(message, key): # direction
@@ -23,6 +24,7 @@ def numbs(message, key): # direction
     blist = []
     a = 0
     c = 0
+    d = 0
     message = list(message)
     key = list(key)
     tkey = int(len(message)/ len(key))
@@ -36,6 +38,8 @@ def numbs(message, key): # direction
         b = a[0] + a[1]
         fullnumlist.append(b)
     print(fullnumlist)
+    for d in fullnumlist:
+        fullnumlist[d] = numltrdict[fullnumlist[d]]
     
 numbs('hello world!', 'hi')
 
