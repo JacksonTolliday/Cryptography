@@ -21,8 +21,8 @@ ltrnumdict = dict(letternumzip)
 numltrdict = dict(numletterzip)
 subractfornumltrdict = associationsnu
 subractfornumltrdict[:] = [x - len(associationsnu) for x in subractfornumltrdict]
-somemore = subractfornumltrdict + somemore
-print(somemore)
+whynot = subractfornumltrdict + whynot
+print(whynot)
 
 
 
