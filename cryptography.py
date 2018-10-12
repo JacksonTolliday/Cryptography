@@ -1,7 +1,7 @@
 """
 cryptography.py
 Author: Jackson Tolliday
-Credit: https://stackoverflow.com/questions/4978787/how-to-split-a-string-into-array-of-characters, https://stackoverflow.com/questions/31175223/append-a-tuple-to-a-list-whats-the-difference-between-two-ways
+Credit: https://stackoverflow.com/questions/4978787/how-to-split-a-string-into-array-of-characters, https://stackoverflow.com/questions/31175223/append-a-tuple-to-a-list-whats-the-difference-between-two-ways, https://stackoverflow.com/questions/5618878/how-to-convert-list-to-string
 
 Assignment:
 
@@ -21,7 +21,7 @@ ltrnumdict = dict(letternumzip)
 numltrdict = dict(numletterzip)
 print(numltrdict)
 
-def numbs(message, key, direction):
+def encdecrypt(message, key, direction):
     a = 0
     c = 0
     d = 0
@@ -41,16 +41,13 @@ def numbs(message, key, direction):
         if direction == -1:
             b = a[0] - a[1]
             fullnumlist.append(b)
-    print(fullnumlist)
     completion = []
     for d in range(len(fullnumlist)):
         completion.append(numltrdict[fullnumlist[d]])
     done = ''.join(completion)
     print(done)
-    
-numbs('hello world!', 'hi', 1)
 
-'''
+
 dore = input(str('Enter e to encrypt, d to decrypt, or q to quit: '))
 run = True
 rerun = False
@@ -58,12 +55,12 @@ while run == True:
     if rerun == False:
         if dore == 'e' or dore == 'd':
             basemsg = input(str('Message: '))
-            key = input(str('Key: '))
+            kee = input(str('Key: '))
             if dore == 'e':
-                print('eeeeeee')
+                encdecrypt(basemsg, kee, 1)
                 rerun = True
             if dore == 'd':
-                print('ddddddd')
+                encdecrypt(basemsg, kee, 1)
                 rerun = True
         elif dore == 'q':
             print('Goodbye!')
@@ -75,5 +72,5 @@ while run == True:
         dore = None
         dore = input(str('Enter e to encrypt, d to decrypt, or q to quit: '))
         rerun = False
-'''
+
 
