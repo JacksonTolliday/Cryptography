@@ -22,7 +22,7 @@ letternumzip = list(zip(associationsn, associationsnu))
 numletterzip = list(zip(whynot, somemore))
 ltrnumdict = dict(letternumzip)
 numltrdict = dict(numletterzip)
-
+print(numltrdict)
 
 
 def encdecrypt(message, key, direction):
