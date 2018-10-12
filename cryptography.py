@@ -17,7 +17,7 @@ letternumzip = list(zip(associationsn, associationsnu))
 numletterzip = list(zip(associationsnu, associationsn))
 ltrnumdict = dict(letternumzip)
 numltrdict = dict(numletterzip)
-print(ltrnumdict)
+print(numltrdict)
 
 def numbs(message, key): # direction
     alist = []
