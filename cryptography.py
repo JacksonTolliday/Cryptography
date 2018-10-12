@@ -36,8 +36,8 @@ def numbs(message, key): # direction
         b = a[0] + a[1]
         fullnumlist.append(b)
     print(fullnumlist)
-    for d in fullnumlist:
-        d = numltrdict[d]
+    for d in range(len(fullnumlist)):
+        fullnumlist[d] = numltrdict[fullnumlist[d]]
     print(fullnumlist)
     
 numbs('hello world!', 'hi')
