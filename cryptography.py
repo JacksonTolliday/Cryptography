@@ -19,7 +19,7 @@ letternumzip = list(zip(associationsn, associationsnu))
 numletterzip = list(zip(whynot, somemore))
 ltrnumdict = dict(letternumzip)
 numltrdict = dict(numletterzip)
-print(numltrdict)
+
 
 def encdecrypt(message, key, direction):
     a = 0
@@ -60,7 +60,7 @@ while run == True:
                 encdecrypt(basemsg, kee, 1)
                 rerun = True
             if dore == 'd':
-                encdecrypt(basemsg, kee, 1)
+                encdecrypt(basemsg, kee, -1)
                 rerun = True
         elif dore == 'q':
             print('Goodbye!')
