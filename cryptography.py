@@ -1,7 +1,7 @@
 """
 cryptography.py
 Author: Jackson Tolliday
-Credit: https://stackoverflow.com/questions/4978787/how-to-split-a-string-into-array-of-characters, https://stackoverflow.com/questions/31175223/append-a-tuple-to-a-list-whats-the-difference-between-two-ways, https://stackoverflow.com/questions/5618878/how-to-convert-list-to-string
+Credit: https://stackoverflow.com/questions/4978787/how-to-split-a-string-into-array-of-characters, https://stackoverflow.com/questions/31175223/append-a-tuple-to-a-list-whats-the-difference-between-two-ways, https://stackoverflow.com/questions/5618878/how-to-convert-list-to-string, https://stackoverflow.com/questions/4918425/subtract-a-value-from-every-number-in-a-list-in-python
 
 Assignment:
 
@@ -19,7 +19,9 @@ letternumzip = list(zip(associationsn, associationsnu))
 numletterzip = list(zip(whynot, somemore))
 ltrnumdict = dict(letternumzip)
 numltrdict = dict(numletterzip)
-subractfornumltrdict = associationsnu-len(associationsn)
+subractfornumltrdict = associationsnu
+subractfornumltrdict[:] = [x - len(associationsnu) for x in subractfornumltrdict]
+print(subractfornumltrdict)
 
 def encdecrypt(message, key, direction):
     a = 0
@@ -47,7 +49,7 @@ def encdecrypt(message, key, direction):
     done = ''.join(completion)
     print(done)
 
-
+'''
 dore = input(str('Enter e to encrypt, d to decrypt, or q to quit: '))
 run = True
 rerun = False
@@ -72,5 +74,5 @@ while run == True:
         dore = None
         dore = input(str('Enter e to encrypt, d to decrypt, or q to quit: '))
         rerun = False
-
+'''
 
