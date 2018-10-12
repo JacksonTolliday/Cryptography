@@ -42,7 +42,7 @@ def numbs(message, key, direction):
     print(fullnumlist)
     for d in range(len(fullnumlist)):
         fullnumlist[d] = numltrdict[fullnumlist[d]]
-    print(fullnumlist)
+
     
 numbs('hello world!', 'hi')
 
