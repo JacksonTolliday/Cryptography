@@ -9,7 +9,7 @@ Write and submit a program that encrypts and decrypts user data.
 
 See the detailed requirements at https://github.com/HHS-IntroProgramming/Cryptography/blob/master/README.md
 """
-
+import math
 associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;'\"/\\<>(){}[]-=_+?!"
 associationsn = list(associations)
 somemore = associationsn*3
@@ -30,7 +30,7 @@ def encdecrypt(message, key, direction):
     d = 0
     message = list(message)
     key = list(key)
-    tkey = len(message) / len(key)
+    tkey = math.ceil(len(message) / len(key))
     thkey = key*tkey
     for c in range(len(message)):
         message[c] = ltrnumdict[message[c]]
