@@ -1,7 +1,7 @@
 """
 cryptography.py
 Author: Jackson Tolliday
-Credit: https://stackoverflow.com/questions/4978787/how-to-split-a-string-into-array-of-characters, https://stackoverflow.com/questions/31175223/append-a-tuple-to-a-list-whats-the-difference-between-two-ways, https://stackoverflow.com/questions/5618878/how-to-convert-list-to-string, https://stackoverflow.com/questions/4918425/subtract-a-value-from-every-number-in-a-list-in-python
+Credit: https://stackoverflow.com/questions/4978787/how-to-split-a-string-into-array-of-characters, https://stackoverflow.com/questions/31175223/append-a-tuple-to-a-list-whats-the-difference-between-two-ways, https://stackoverflow.com/questions/5618878/how-to-convert-list-to-string, https://stackoverflow.com/questions/4918425/subtract-a-value-from-every-number-in-a-list-in-python, https://www.dotnetperls.com/round-python
 
 Assignment:
 
