@@ -31,7 +31,7 @@ def encdecrypt(message, key, direction):
     d = 0
     message = list(message)
     key = list(key)
-    tkey = int(len(message)/ len(key))
+    tkey = int(len(message) // len(key))
     thkey = key*tkey
     for c in range(len(message)):
         message[c] = ltrnumdict[message[c]]
